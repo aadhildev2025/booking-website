@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelPlay Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <img src="./assets/logo.png" alt="PixelPlay Logo">
+    <h1>PixelPlay Lounge</h1>
+    <p>Online Booking Form</p>
+  </header>
+
+  <form id="bookingForm" action="https://formspree.io/f/xpwlwdvk" method="POST">
+    <input type="text" name="name" id="name" placeholder="Your Name" required />
+    <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+    <input type="date" name="date" id="date" required />
+
+    <select name="slot" id="slot" required>
+      <option value="">Select Time Slot</option>
+      <option value="9am - 10am">9am - 10am</option>
+      <option value="10am - 11am">10am - 11am</option>
+      <option value="4pm - 5pm">4pm - 5pm</option>
+      <option value="5pm - 6pm">5pm - 6pm</option>
+      <option value="6pm - 7pm">6pm - 7pm</option>
+      <option value="7pm - 8pm">7pm - 8pm</option>
+      <option value="8pm - 9pm">8pm - 9pm</option>
+      <option value="9pm - 10pm">9pm - 10pm</option>
+    </select>
+
+    <select name="type" id="type" required>
+      <option value="">Select Type</option>
+      <option value="Solo">Solo (Rs.500/hr)</option>
+      <option value="Duo">Duo (Rs.800/hr)</option>
+    </select>
+
+    <select name="additional_hours" id="additional" required>
+      <option value="0">Additional Hours</option>
+      <option value="1">+1 Hour</option>
+      <option value="2">+2 Hours</option>
+      <option value="3">+3 Hours</option>
+    </select>
+
+    <p id="priceDisplay">Total Price: Rs.0</p>
+    <input type="hidden" name="total_price" id="priceHidden" />
+
+    <button type="submit">Book Now</button>
+  </form>
+
+    <footer>📍 Madurankuliya | Call: +94 71 430 4378</footer>
+
+<script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #0f0f23;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin: 30px 20px 20px;
+    }
+    header img {
+      width: 200px;
+    }
+    header h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 20px;
+      color: #00ffc3;
+      margin: 10px 0;
+    }
+    form {
+      background: #1a1a2e;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-sizing: border-box;
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    form input, form select {
+      background: #2e2e4e;
+      color: #fff;
+    }
+    form button {
+      background-color: #00ffc3;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #00e6b8;
+    }
+    #priceDisplay {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #00ffc3;
+    }
+    footer {
+      margin: 30px 0;
+      font-size: 14px;
+      color: #aaa;
+      text-align: center;
+    }
